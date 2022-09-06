@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+*{
+    font-family: Roboto;
+}
+body, aside{
+    color: #373867;
+}
+body{
+    height: 100%;
+    width: auto;
+}
+aside{
+    display: inline;
+    float: left;
+    height: 100%;
+    width: 320px;
+    margin-top: 93px;
+    border-radius: 16px;
+    background-color: #C4C4C4;
+    align-items: center;
+}
+aside nav{
+    display: block;
+    text-align: justify;
+    margin-left: 40px;
+    line-height: 85px;
+    font-size: 25px;
+}
+#placeholderLine {
+    display: inline;
+
+}
+address{
+    line-height: 20px;
+    /* text-align: justify; */
+    font-size: 20px;
+    display: block;
+}
+address div{
+    display: inline;
+}
+address div img{
+    margin-left: 10px;
+}
+address div h4{
+    float: right;
+}
+header{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 11.5%;
+    background: #373867;
+    color: #FFFFFF;
+}
+#logo{
+    float: left;
+    position: relative;
+    margin-left: 3px;
+    margin-top: 9px;
+}
+header h2{
+    text-align: center;
+    font-size: 38px;
+    line-height: 90px;
+    font-weight: 700;
+    font-style: bold;
+}
+address h3{
+    text-align: center;
+    font-size: 25px;
+    line-height: 10px;
+}
+/*.icon {
+    margin-left: 16px;
+    line-height: 10px;
+
+}
+.icon2 {
+    margin-left: 16px;
+    line-height: 10px;
+
+    margin-top: 3px;
+
+
+address div{
+    display: inline-block;
+}
+body aside div{
+    display: inline;
+} */
+.containerEmail{
+    position: relative;
+}
+.containerLocation{
+    position: relative;
+}
+/* address div h4{
+    /* display: block;
+    position: relative;
+    text-align: center; */
+    /* margin-left: 10px;
+    line-height: 20px;
+} */ */
+.icon2{
+    display: block;
+    position: absolute;
+    width: 18.71px;
+    height: 14.98px;
+    left: 28.66px;
+    top: 701.75px;
+}
