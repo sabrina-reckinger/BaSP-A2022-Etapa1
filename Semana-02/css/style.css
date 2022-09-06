@@ -1,32 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 *{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 body, aside{
     color: #373867;
 }
 body{
     height: 100%;
-    /* width: 80%; */
+    width: 100%;
     display: block;
     float: right;
+}
+footer{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    height: 15%;
+    margin-bottom: 0%;
 }
 main{
     display: block;
     width: 80%;
-    height: 100%;
+    height: 85%;
     float: right;
 }
 aside{
-    display: block;
+    display: inline-block;
     float: left;
-    height: 100%;
+    /* height: 3800px; */
+    position: relative;
+    height:80%;
     width: 20%;
     margin-top: 93px;
     border-radius: 16px;
     background-color: #C4C4C4;
-    align-items: center;
+    /* align-items: center; */
     margin-left: 0%;
 }
 aside nav{
@@ -36,9 +44,25 @@ aside nav{
     line-height: 85px;
     font-size: 25px;
 }
-#placeholderLine {
+#aside-placeholder{
     display: inline;
-
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 65%;
+}
+#placeholder-line{
+    display: inline;
+}
+#find{
+    margin-left: 0px;
+}
+#aside-placeholder input{
+    background-color: transparent;
+    width: 110px;
+    float: right;
+    margin-top: 18px;
 }
 address{
     line-height: 20px;
@@ -55,7 +79,7 @@ address div img{
 address div h4{
     float: right;
 }
-.containerContact {
+.container-contact {
     display: inline-block;
     width: 320px;
     text-align: justify;
@@ -63,10 +87,9 @@ address div h4{
     font-size: 20px;
     position: relative;
 }
-.containerContact h4{
+.container-contact h4{
     display: inline;
     margin-left: 5px;
-
 }
 header{
     position: absolute;
@@ -84,7 +107,7 @@ header{
 }
 header h2{
     text-align: center;
-    font-size: 38px;
+    font-size: 60px;
     line-height: 90px;
     font-weight: 700;
     font-style: bold;
@@ -107,10 +130,10 @@ icon{
     top: 701.75px;
 }
 h1 {
-    display: inline-block;
+    display: inline;
     position: relative;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 110px;
     font-style: bold;
     font-weight: 700;
     font-size: 50px;
@@ -134,7 +157,7 @@ h1 {
 .blog button{
     float: right;
 }
-.littleBlog{
+.little-blog{
     position: relative;
     display: inline-block;
     float: right;
@@ -143,18 +166,18 @@ h1 {
     margin-bottom: 8px;
     margin-top: 17px;
 }
-.littleBlog article{
+.little-blog article{
     margin-bottom: 20px;
     margin-top: ;
 }
-.textLittleBlog {
+.text-little-blog {
     float: right;
     display: inline;
     width: 20%;
     /* padding: 9px; */
     /* margin-bottom: 19px; */
 }
-article button{
+#blog-button{
     float: right;
     /* margin-right: 30px; */
 }
@@ -162,54 +185,64 @@ article div h2{
     font-size: 15px;
     font-style: bold;
 }
-.blogTest{
-    font-size: 20px;
+.blog-test{
+    font-size: 25px;
     font-weight: 700;
     text-align: justify;
 }
-.littleButton{
-    display: inline-block;
-    float: right;
-    margin-right: 15px;
+.text-little-blog h2{
+    font-size: 17px;
+    font-weight: 700;
+    text-align: justify;
 }
-.littleBlogImg {
+.little-button{
+    /* display: inline-block; */
+    position: relative;
+    margin-right: 5px;
+}
+.little-blog-img {
     width: 130px;
     padding: 6px;
 }
-#trayectory{
+#trayectory-section{
     display: inline;
-    position: relative;
+    /* position: relative; */
     /* margin-left: 360px; */
-    width: 47%;
+    align-items: center;
+    width: 100%;
 }
-#trayectory p {
-    float: left;
-    width: 30%;
-}
-#trayectory img{
+#trayectory-section p {
+    display: inline;
     float: right;
-    width: 500px;
-    margin-right: 10px;
+    text-align: justify;
+    width: 40%;
+    /* margin-left:50px; */
+    margin-right: 35px;
+    margin-left: 35px;
 }
-#workwithus{
+#trayectory-section img{
+    float: right;
+    width: 450px;
+    margin-right: 50px;
+}
+#workwithus-section{
     display: inline-block;
 }
-.sectionTitle{
+.section-title{
+    font-size: 25px;
+    font-weight: 700;
     text-align: center;
-    font-size: 30 bold;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
-#functions{
+#functions-section{
     display: inline;
 }
-#getInTouch{
+#getintouch-section{
     display: block;
     align-items: center;
 }
-footer{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    align-items: center;
-    height: 35px;
-    margin-bottom: 0%;
+p {
+    font-size: 17px;
+    margin-top: 15px;
 }
