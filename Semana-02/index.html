@@ -18,15 +18,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <aside>
-            <div id="placeholder-line">
-                <a href="imgHolder">
+        <header>
+            <img src="assets/LOGO-RR 2.svg" alt="radium rocket logo" id="logo">
+                <h2>
+                    <code translate="no">Gigantech Software Solution SA</code>
+                </h2>
+        </header>
+       <aside>
+            <div id="placeholderine" style="display:inline-block;">
+                <a href="imgHolder" >
                     <img src="assets/arrow.svg" alt="" id="arrow">
                 </a>
-                <a href="">
+                <a href="" >
                     <img src="assets/find.svg" alt="" id="find">
                 </a>
-                <form action="" id="aside-placeholder">
+                <form action="" id="aside-placeholder" >
                     <input type="text" placeholder="Placeholder">
                 </form>
             </div>
@@ -67,7 +73,7 @@
                         </code>
                     </h4>
                 </div>
-                <div class="containerContact">
+                <div class="container-contact">
                     <img src="assets/gps.svg" alt="location icon" class="icon">
                     <h4>
                         <code translate="no">
@@ -75,7 +81,7 @@
                         </code>
                     </h4>
                 </div>
-                <div class="containerContact">
+                <div class="container-contact">
                     <img src="assets/phone.svg" alt="phone icon" class="icon">
                     <h4>
                         0800999000
@@ -83,13 +89,7 @@
                 </div>
             </address>
         </aside>
-        <header>
-            <img src="assets/LOGO-RR 2.svg" alt="radium rocket logo" id="logo">
-                <h2>
-                    <code translate="no">Gigantech Software Solution SA</code>
-                </h2>
-        </header>
-        <main>
+         <main>
             <section>
                 <div id="burger">
                     <a href="">
@@ -99,9 +99,8 @@
                 <h1>
                     Trackgenix
                 </h1>
-                </section>
-                <article class="blog">
-                    <img src="assets/trackgenix-big.png" alt="men working with the computer">
+                <article class="blog" style="float:left; width:48%">
+                    <img src="assets/trackgenix-big.png" alt="men working with the computer" style="width:100%;">
                     <h2 class="blog-test">
                         Keep a good working life-balance
                     </h2>
@@ -112,7 +111,7 @@
                         Read More
                     </button>
                 </article>
-                <div class="little-blog">
+                <div class="little-blog" style="width:48%">
                     <article>
                         <img src="assets/trackgenix-small-two.png" alt="random code" class="little-blog-img">
                         <div class="text-little-blog">    
@@ -122,11 +121,11 @@
                             <p>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi esse tempore quae?
                             </p>
+                            <button class="little-button">
+                                Read More
+                            </button>
                         </div>
-                        <button class="little-button">
-                            Read More
-                        </button>
-                    </article>
+                     </article>
                     <article>
                         <img src="assets/trackgenix-small-one.png" alt="women working" class="little-blog-img">
                         <div class="text-little-blog">  
@@ -140,11 +139,10 @@
                                 Read More
                             </button>
                         </div>
-
                     </article>
                 </div>
             </section>
-            <section id="trayectory-section">
+            <section id="trayectory-section" style="clear:both;">
                 <h2 class="section-title">
                     Our trayectory in the software word since 2019
                 </h2>
@@ -158,8 +156,8 @@
                     Work with us
                 </h2>
                 <div>
-                    <div>
-                    <img src="assets/🦆 icon _Laptop Code_.svg" alt="icon of a computer">
+                    <div class="workwithus-item">
+                    <img src="assets/🦆 icon _Laptop Code_.svg" alt="icon of a computer" style="float:left;">
                     <h4>
                         Develop your productivity
                     </h4>
@@ -167,18 +165,7 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, autem!
                     </p>
                     </div>
-                    <div>
-                        <img src="assets/🦆 icon _user progress_.svg" alt="statistical graph icon">
-                        <h4>
-                            Progress in your work
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, autem!
-                        </p>
-                    </div>
-                </div>
-                <div>
-                    <div>
+                    <div class="workwithus-item">
                         <img src="assets/🦆 icon _People Team_.svg" alt="icon of a team of people">
                         <h4>
                             Running Teams
@@ -187,7 +174,18 @@
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, autem!
                         </p>
                     </div>
-                    <div>
+                 </div>
+                <div>
+                   <div class="workwithus-item">
+                        <img src="assets/🦆 icon _user progress_.svg" alt="statistical graph icon">
+                        <h4>
+                            Progress in your work
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, autem!
+                        </p>
+                    </div>
+                    <div class="workwithus-item">
                         <img src="assets/🦆 icon _list task_.svg" alt="task list icon">
                         <h4>
                             Take decisions
@@ -202,9 +200,7 @@
                 <h2 class="section-title">
                     Functions
                 </h2>
-                <div>
                     <img src="assets/functions.png" alt="Table with computers">
-                </div>
                 <div>
                     <ol>
                         <li>
@@ -228,11 +224,7 @@
                 </h2>
                 <form action="" id="name">
                     <input type="text" placeholder="Name">
-                </form>
-                <form action="" id="email">
-                    <input type="text" placeholder="Email">
-                </form>
-                <form action="" id="resourceArea-section">
+                     <input type="text" placeholder="Email">
                     <select name="Resource Area">
                         <option value="">
                             Resource Area
@@ -259,37 +251,39 @@
                 <h2 class="section-title">
                     Title
                 </h2>
-                <div>
-                    <div>
-                        <img src="assets/tick.svg" alt="tick icon">
-                        <img src="assets/line.png" alt="line icon">
-                    </div>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum ut ex assumenda vitae similique, quam, sed adipisci officia, in excepturi ipsam nam atque rem magnam rerum. Porro, ipsum laboriosam.
-                        </p>
-                    </div>
-                </div>
-                <div>
+                <div class="title-item">
+                    <div class="unir" >
                     <img src="assets/tick.svg" alt="tick icon">
                     <img src="assets/line.png" alt="line icon">
+                    </div>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum ut ex assumenda vitae similique, quam, sed adipisci officia, in excepturi ipsam nam atque rem magnam rerum. Porro, ipsum laboriosam.
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum ut ex assumenda vitae similique, quam, sed adipisci officia, in excepturi ipsam nam atque rem magnam rerum. Porro, ipsum laboriosam.
-                    </p>
+                <div class="title-item">
+                    <div class="unir" >
+                    <img src="assets/tick.svg" alt="tick icon">
+                    <img src="assets/line.png" alt="line icon">
+                    </div>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum ut ex assumenda vitae similique, quam, sed adipisci officia, in excepturi ipsam nam atque rem magnam rerum. Porro, ipsum laboriosam.
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div>
-                <img src="assets/tick.svg" alt="tick icon">
-                <img src="assets/line.png" alt="line icon">
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum ut ex assumenda vitae similique, quam, sed adipisci officia, in excepturi ipsam nam atque rem magnam rerum. Porro, ipsum laboriosam.
-                </p>
-            </div> 
-        </div>
+                <div class="title-item">
+                    <div class="unir" >
+                    <img src="assets/tick.svg" alt="tick icon">
+                    <img src="assets/line.png" alt="line icon">
+                    </div>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum ut ex assumenda vitae similique, quam, sed adipisci officia, in excepturi ipsam nam atque rem magnam rerum. Porro, ipsum laboriosam.
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section id="list">
                 <h2 class="section-title">
