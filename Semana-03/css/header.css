@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    flex-wrap:nowrap; 
+    width: 100%;
+    color: white;
+    background: #373867;
+     z-index: 1;
+}
+header img {
+    margin-left: 14px;
+    vertical-align: auto;
+    width: 108px;
+    height: 60%;
+    margin-top: 21%;
+}
+header h2 {
+    font-size: 40px;
+    font-weight: 550;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
