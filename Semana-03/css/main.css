@@ -45,7 +45,7 @@ main button {
     border-radius: 10;
     margin-bottom: 55px;
 }
-.column-article article img {
+.column-article article img, .trayectory img, .workwithus-item img, .section-functions div img {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +58,7 @@ main button {
     margin-top: 20px;
     height: 300px;
 }
-.column-article article p {
+.column-article article p, .trayectory p, .section-title, .workwithus-item p, .section-functions div, .title-section div ul li, .list-section p ol {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -92,3 +92,85 @@ main button {
     font-family: "Roboto", sans-serif;
     border-radius: 5px;
 }
+.section-title, .section-function h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+.section-title p {
+    margin-bottom: 70px;
+}
+.section-functions div {
+    font-size: 25px;
+    line-height: 50px;
+}
+.getintouch-section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    height: fit-content;
+}
+.getintouch-section div textarea {
+    background-color: transparent;
+    border-color: rgb(225, 213, 213);
+    height: 100%;
+    color: gray;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.title-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    height: 300px;
+}
+.title-section h2 {
+    margin-top: 600px;
+}
+.title-section-icons {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.list-section {
+    margin-top: 660px;
+    display: flex;
+    flex-direction: column;
+}
+.list-section p {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 30%;
+}
+/* .list-section p ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 30%;
+} */
