@@ -22,4 +22,12 @@ header div h2 code {
     font-weight: bolder;
     text-align: left;
 }
-
+@media (min-width: 768px){
+    header div h2 code {
+        font-size: 60px;
+        margin-left: 90px;
+    }
+}
+@media (min-width: 1024px){
+    
+}
