@@ -2,8 +2,6 @@ header {
     display: flex;
     flex-wrap:nowrap;
     width: 100%;
-    width: 100%;
-    display: flex;
     justify-content: baseline;
     background-color: #373867;
 }
@@ -22,7 +20,6 @@ header div h2 code {
     width: 100%;
     font-size: 30px;
     font-weight: bolder;
-    color: white;
     text-align: left;
 }
 
