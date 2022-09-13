@@ -1,0 +1,94 @@
+main {
+    width: 100%;
+    margin-top: 10px;
+    z-index: 2;
+}
+h1 {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+}
+.mobile-nav-align-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10 px;
+}
+.menu-postal-icons {
+    display: flex;
+    flex-direction: column;
+}
+#contact {
+    margin-left: 9px;
+    margin-top: 12px;
+}
+#burger {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+#menu-dots {
+    margin-left: 10px;
+}
+main section article {
+    width: 100%;
+}
+main button {
+    display: flex;
+    flex-direction: column;
+}
+.column-article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    border-radius: 10;
+    margin-bottom: 55px;
+}
+.column-article article img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 300px;
+}
+.column-article article p {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.big-image {
+    width: 80%;
+    align-items: center;
+}
+.blog-2 {
+    order: 2;
+}
+.blog-3 {
+    order: -1;
+}
+.read-more-button {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color: aliceblue;
+    border-color: transparent;
+    height: 100%;
+    color: gray;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+}
