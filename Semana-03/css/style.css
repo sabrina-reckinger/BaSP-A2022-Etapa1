@@ -1,9 +1,32 @@
- {
-    font-family: 'Roboto', sans-serif, 'Lucida Sans';
-}
 header, main, aside, footer {
     font-family: 'Roboto', sans-serif, 'Lucida Sans';
+    color: #373867;
+    font-size: 20px;
+} 
+p {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    align-items: center;
 }
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #373867;
+    font-size: 30px;
+    font-weight: 700;
+    width: 100%;
+}
+/* img {
+    max-width: 100%;
+    padding: 20px; */
+    /* background-color: red; */
+}
+
+/* header, main, aside, footer {
+    font-family: 'Roboto', sans-serif, 'Lucida Sans'; */
+/* }
 main, aside {
     color: #373867;
     height: 100%;
@@ -91,21 +114,12 @@ address h3 {
 .icon {
     margin-right: 5px;
 }
-h1 {
-    text-align: center;
-    margin-top: 110px;
-    font-style: bold;
-    font-weight: 700;
-    font-size: 50px;
-    text-decoration-line: underline;
-    margin-left: 350px;
-}
 .blog {
     margin-top: 37px;
-    width: 60%;
-    margin-left: 45px;
+    width: 30%;
+    margin-left: 45px; */
 }
-.little-blog {
+/* .little-blog {
     width: 48%
     margin-bottom: 8px;
     margin-top: 17px;
@@ -113,8 +127,8 @@ h1 {
 .little-blog article {
     margin-bottom: 20px;
     margin-top: 5px;
-}
-article div h2 {
+} */
+/* article div h2 {
     font-size: 15px;
     font-style: bold;
 }
@@ -232,6 +246,25 @@ article div h2 {
 p {
     font-size: 17px;
     margin-top: 15px;
-}
+} */
 
 
+/* Agustin Schiaffino11:08
+https://www.figma.com/file/nNTIPd7HwRNBoqBnlLO4Vl/UI-kit-RR-(BaSP)-B?node-id=37%3A19
+Nicolás Blasco11:31
+<section>
+            <div>
+                <div>
+                    <a>menu-dots</a>
+                </div>
+                <div>
+                    <a>sobrecito</a>
+                </div>
+            </div>
+            <div>
+                <h1></h1>
+            </div>
+            <div>
+                <a>mensaje</a>
+            </div>
+        </section> */
