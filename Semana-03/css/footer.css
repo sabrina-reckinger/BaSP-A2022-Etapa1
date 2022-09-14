@@ -5,7 +5,6 @@
     justify-content: center;
     background-color: #D9D9D9;
     margin-bottom: 0px;
-    /* margin-top: 400px; */
 }
 .footer-section h3 code{
     display: flex;
@@ -15,3 +14,9 @@
     margin-top: 10px;
     color: white;
 }
+/* @media (min-width: 768px){
+
+}
+@media (min-width: 1024px){
+    
+} */
