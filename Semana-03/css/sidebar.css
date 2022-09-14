@@ -2,8 +2,28 @@ aside {
     display: none;
 }
 @media (min-width: 768px) {
-    display: none;
 }
 @media (min-width: 1024px) {
-    
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 20%;
+        background-color: #C4C4C4;
+        height: 100%;
+        border-radius: 10px;
+    }
+    #placeholderline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #aside-placeholder input {
+        background-color: transparent;
+        width: 130px;
+        margin-top: 18px;
+
+    }
+
+    }
 }
