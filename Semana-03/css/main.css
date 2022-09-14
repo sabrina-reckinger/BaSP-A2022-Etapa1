@@ -1,7 +1,6 @@
 main {
     width: 100%;
     margin-top: 10px;
-    z-index: 2;
 }
 #arrow-tablet {
     display: none;
@@ -90,7 +89,6 @@ main button {
     margin-top: 15px;
     background-color: aliceblue;
     border-color: transparent;
-    /* height: 100%; */
     color: gray;
     font-family: "Roboto", sans-serif;
     border-radius: 5px;
@@ -269,13 +267,6 @@ main button {
         margin-top: 50%;
         margin-bottom: 50px;
     }
-    /* .title-section-one {
-        display: flex;
-        flex-direction: row;
-        /* justify-content: space-between; */
-        /* margin: 0px;
-        width: 30%;
-    } */
     .title-block {
         width: 25%;
         display: flex;
@@ -321,5 +312,26 @@ main button {
     }
 }
 @media (min-width: 1024px){
-
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: right;
+        margin-top: 0%;
+    }
+    #arrow-tablet, #menu-dots, #contact {
+        display: none;
+    }
+    #burger {
+        display: block;
+    }
+    .trayectory {
+        border-bottom: 20px rgb(0, 0, 0);
+        margin-bottom: 20px;
+    }
+    #burger {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
 }
