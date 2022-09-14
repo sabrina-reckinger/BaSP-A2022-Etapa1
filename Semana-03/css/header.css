@@ -8,7 +8,7 @@ header {
 header img {
     margin-left: 14px;
     vertical-align: auto;
-    width: 108px;
+    width: 100px;
     height: 60%;
     margin-top: 23%;
 }
@@ -29,5 +29,11 @@ header div h2 code {
     }
 }
 @media (min-width: 1024px){
-    
+    header {
+        width: 100%;
+    }
+    header div h2 code {
+        display: flex;
+        margin-left: 60%;
+    }
 }
