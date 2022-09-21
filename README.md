@@ -11,6 +11,7 @@ Index:
 + Week 2: HTML
 + Week 3: CSS
 + Week 4: Responsive with CSS
++ Week 5: Correct CSS and do JS exercises
 ```
 
 
@@ -50,5 +51,11 @@ I add a new page call "reset.css" that pulls out the preformat of the bowser and
 >- PC monitor
 
 
+
+---------------------------------------
+
+### Week 5:
+
+>This week i correct my CSS code
 
 ---------------------------------------
