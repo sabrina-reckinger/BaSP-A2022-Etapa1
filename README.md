@@ -12,6 +12,7 @@ Index:
 + Week 3: CSS
 + Week 4: Responsive with CSS
 + Week 5: Correct CSS and do JS exercises
++ Week 6: Login page
 ```
 
 
@@ -57,5 +58,11 @@ I add a new page call "reset.css" that pulls out the preformat of the bowser and
 ### Week 5:
 
 >This week i correct my CSS code
+
+---------------------------------------
+
+### Week 6:
+
+>This week i add login page with JS functions
 
 ---------------------------------------
