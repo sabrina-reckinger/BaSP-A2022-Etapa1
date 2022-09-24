@@ -1,0 +1,26 @@
+#trackgenix-img {
+    width: 100%;
+    text-align: center;
+}
+#trackgenix-img img {
+    width: 50%;
+}
+.button-login{
+    background-color: green;
+}
+.box-login {
+    background-color: #D9D9D9;
+    width: 35%;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+form input {
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    flex-wrap:nowrap;
+    width: 100%;
+    justify-content: baseline;
+    background-color: #373867;
+}
+header img {
+    margin-left: 14px;
+    vertical-align: auto;
+    width: 100px;
+    height: 60%;
+    margin-top: 23%;
+}
+header div code {
+    color: #FFFFFF;
+    margin-top: 23px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+h1 {
+    text-decoration: underline;
+    margin-bottom: 17px;
+}
+

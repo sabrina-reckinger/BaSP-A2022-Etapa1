@@ -1,0 +1,234 @@
+#principal {
+	display: flex;
+	width: 100%;
+}
+main {
+    width: 100%;
+    margin-top: 10px;
+}
+#arrow-tablet {
+    display: none;
+}
+h1 {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 40px;
+}
+.mobile-nav-align-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10 px;
+}
+.menu-postal-icons {
+    display: flex;
+    flex-direction: column;
+}
+#contact {
+    margin-left: 9px;
+    margin-top: 12px;
+}
+#burger {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+#menu-dots {
+    margin-left: 10px;
+}
+main section article {
+    width: 100%;
+}
+main button {
+    display: flex;
+    flex-direction: column;
+}
+.column-articles {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+	justify-content: center;
+    margin-bottom: 10px;
+	padding-left:2%;
+}
+.lists {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+	justify-content: center;
+}
+.lists div {
+    width: 90%;
+	padding-left:20%;
+}
+.column-articles img{
+    width: 85%;
+}
+div {
+}
+.big-image{
+	width: 100%;
+	text-align:center;
+	font-size:22px;
+}
+.little-image{
+	width: 100%;
+    align-items: center;
+	font-size:18px;
+}
+.blog-2 img{
+	width:90%;
+	padding-left:5%;
+	height: 200px;;
+	text-align:center;
+}
+.blog-2 p{
+	padding-left:10%;
+}
+.big-image p{
+	padding-left:10%;
+}
+.blog-2 {
+	display: flex;
+	flex-direction: column;
+	padding-bottom:10px;
+	text-align:center;
+}
+.column-article article img, .trayectory img, .workwithus-item img, .section-functions div div img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    height: 300px;
+}
+.column-article article p, .trayectory p, .section-title, .workwithus-item div p, .section-functions div div, .title-section div ul li, .list-section p ol {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.read-more-button {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    background-color: aliceblue;
+    border-color: transparent;
+    color: gray;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+}
+.section-title, .section-function h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    width: 97%;
+}
+.section-title p {
+    margin-bottom: 70px;
+}
+.section-functions div div {
+    font-size: 25px;
+    line-height: 50px;
+    width: 100%;
+}
+.getintouch-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1 1 0;
+}
+.getintouch-section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.getintouch-section form input {
+    width: 500px;
+    height: 40px;
+    margin-top: 15px;
+    border-radius: 5px;
+    align-items: center;
+}
+.getintouch-section select {
+    width: 500px;
+    height: 40px;
+    align-content: center;
+    margin-top: 15px;
+}
+.getintouch-section div textarea {
+    display: flex;
+    background-color: transparent;
+    border-color: rgb(225, 213, 213);
+    height: 100px;
+    color: rgb(186, 185, 185);
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 500px;
+    flex: 1 1 auto;
+}
+.title-section {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+.title-section h2 {
+    margin-top: 15px;
+}
+.title-section-icons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.list-section {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.list-type {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
