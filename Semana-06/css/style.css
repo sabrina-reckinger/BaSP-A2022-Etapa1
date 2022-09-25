@@ -24,8 +24,7 @@ h2 {
 }
 @media (min-width: 768px){
     header div code {
-        font-size: 60px;
-        margin-left: 90px;
+        font-size: 50px;
     }
     main .lists {
 		display: flex;
