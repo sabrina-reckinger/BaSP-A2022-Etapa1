@@ -1,4 +1,7 @@
-function validate(word, type){
+function validate(word, type, minChar){
+    if (word.length < minChar) {
+        return (false)
+    }
     toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     if (type == "letters"){
         toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -9,14 +12,14 @@ function validate(word, type){
     if (type == "lettersAndNumbers"){
         toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     }
-    valid = true
     letters = word.length;
-    for (a = 0; a < letters ; a++){
-        if (toCheck.indexOf (word[a])==-1){
-            valid = false;
+    for (a = 0; a < letters; a++){
+        charToFind = word[a];
+        if (toCheck.indexOf (charToFind) == -1){
+            return (false)
         }
     }
-    return (valid);
+    return (true);
 }
 window.onload = function () {
     var inputEmail = document.getElementById ("inputEmail");
@@ -42,7 +45,7 @@ window.onload = function () {
     }
     inputPassword.onblur = function () {
         password = inputPassword.value;
-        passwordOk = password.length >= 8 && validate(password, "lettersAndNumbers");
+        passwordOk = validate (password, "lettersAndNumbers", 8);
         if (passwordOk == false) {
             passwordError.classList.remove ("hidden");
         }
@@ -55,7 +58,7 @@ window.onload = function () {
         mail = inputEmail.value;
         mailOk = emailExpression.test(mail);
         password = inputPassword.value;
-        passwordOk = password.length >= 8;
+        passwordOk = validate (password, "lettersAndNumbers", 8);
         if (passwordOk == true && mailOk == true){
             alert("Email: " + mail + ". Password: " + password)
         } else {
@@ -68,4 +71,3 @@ window.onload = function () {
         }
     }
 }
-fdfsfdsfddsfsd
