@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="/css/sign-up.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <script src="../javascript/sign-up.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/employee-signup.css">
+    <script src="../javascript/employee-signup.js"></script>
     <title> Trackgenix sign-up </title>
 </head>
 <body>
@@ -24,6 +24,19 @@
             </h2>
         </div>
     </header>
+    <nav class="horizontal-nav">
+        <ul>
+            <li>
+                <a href="./index.html"> LANDING </a>
+            </li>
+            <li>
+                <a href="./login.html"> LOGIN </a>
+            </li>
+            <li>
+                <a href="./employee-signup.html"> SIGN-UP </a>
+            </li>
+        </ul>
+    </nav>
     <div class="body-login-container">
         <div class="box-login">
             <h2> ADMIN LOGIN </h2>
@@ -48,7 +61,7 @@
                     </fieldset>
                     <fieldset>
                         <label>Birthday</label>
-                        <input type="text" placeholder="birthday" id="inputDate">
+                        <input type="text" placeholder="birthday format: dd/mm/yyyy" id="inputBirthday">
                         <p class="error-message">* invalid date</p>
                     </fieldset>
                     <fieldset>
@@ -88,7 +101,7 @@
                     </fieldset>
                     <div>
                         <button class="button-sign-up" type="submit">
-                            LOG IN
+                            CREATE
                         </button>
                     </div>
                 </form>

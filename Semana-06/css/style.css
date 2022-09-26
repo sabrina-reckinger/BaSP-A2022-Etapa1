@@ -1,7 +1,21 @@
-header, main, aside, footer {
+header, main, aside, footer, {
     font-family: 'Roboto', sans-serif, 'Lucida Sans';
     color: #373867;
     font-size: 20px;
+}
+.horizontal-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(201, 195, 195);
+    font-family: "roboto", sans-serif;
+    font-size: 15px;
+}
+.horizontal-nav ul li {
+    display: block;
 }
 link {
     text-decoration: none;

@@ -54,3 +54,10 @@ fieldset, select {
 .hidden {
     display: none;
 }
+input:focus{
+    outline: none;
+    border: solid green 2px;
+}
+.redBorder{
+    border: solid red 2px;
+}
