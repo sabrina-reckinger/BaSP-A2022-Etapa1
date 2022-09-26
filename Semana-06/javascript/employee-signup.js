@@ -216,6 +216,7 @@ window.onload = function () {
         inputRepeatPassword.classList.remove ("redBorder");
     }
     signUpButton.onclick = function(e){
+        var badInputs = []
         e.preventDefault();
         names = inputName.value;
         nameOK = validate (names, "letters", 4);
@@ -241,41 +242,42 @@ window.onload = function () {
         repeatPassword = inputRepeatPassword.value;
         repeatPasswordOK = repeatPassword === password;
         if (nameOK == true && lastnameOK== true && DNIOK == true && birthdayOK == true && phoneOK == true && directionOK == true && cityOK == true && CPOK == true && repeatPasswordOK == true && passwordOk == true && mailOk == true){
-            alert("Datos correctos")
+            alert("Datos correctos." + "\n Los datos ingresados son: " + "\n Nombre completo: " + names + " " + lastname + "\n DNI: " + DNI + "\n Fecha de nacimiento: " + birthday + "\n Telefono: " + phone + "\n Direccion: " + direction + "\n Ciudad: " + city + "\n Codigo Postal: " + CP + "\n eMail: " + mail + "\n Contraseña: " + password)
         } else {
             if (nameOK == false){
-                alert("Invalid name");
+                badInputs.push("Nombre = " + names + "\n")
             }
             if (lastnameOK == false){
-                alert("Invalid lastname");
+                badInputs.push("Apellido = " + lastname + "\n")
             }
             if (DNIOK == false){
-                alert("Invalid DNI");
+                badInputs.push("DNI = " + DNI + "\n")
             }
             if (birthdayOK == false){
-                alert("Invalid birthday");
+                badInputs.push("Fecha de nacimiento = " + birthday + "\n")
             }
             if (phoneOK == false){
-                alert("Invalid phone");
+                badInputs.push("Telefono = " + phone + "\n")
             }
             if (directionOK == false){
-                alert("Invalid direction");
+                badInputs.push("Direccion = " + direction + "\n")
             }
             if (cityOK == false){
-                alert("Invalid city");
+                badInputs.push("Ciudad = " + city + "\n")
             }
             if (CPOK == false){
-                alert("Invalid CP");
+                badInputs.push("Codigo postal" + CP + "\n")
             }
             if (mailOk == false){
-                alert("Invalid email");
+                badInputs.push("eMail = " + mail + "\n")
             }
             if (passwordOk == false){
-                alert("Invalid password");
+                badInputs.push("Contraseña = " + password + "\n")
             }
             if (repeatPasswordOK == false){
-                alert("Invalid password repeat");
+                badInputs.push("Reingreso de contraseña = " + repeatPassword + "\n")
             }
+            alert ("Los datos mal ingresados son los siguientes = \n" + badInputs)
         }
     }
 

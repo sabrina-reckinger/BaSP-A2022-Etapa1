@@ -24,93 +24,99 @@
             </h2>
         </div>
     </header>
-    <nav class="horizontal-nav">
-        <ul>
-            <li>
-                <a href="./index.html"> LANDING </a>
-            </li>
-            <li>
-                <a href="./login.html"> LOGIN </a>
-            </li>
-            <li>
-                <a href="./employee-signup.html"> SIGN-UP </a>
-            </li>
-        </ul>
-    </nav>
-    <div class="body-login-container">
-        <div class="box-login">
-            <h2> ADMIN LOGIN </h2>
-            <h3> Please enter your Email or your Phone number and your password to log in for your account
-            </h3>
-            <div>
-                <form action="#">
-                    <fieldset>
-                        <label>Name</label>
-                        <input type="text" placeholder="name" id="inputName">
-                        <p class="error-message">* invalid name</p>
-                    </fieldset>
-                    <fieldset>
-                        <label>Lastname</label>
-                        <input type="text" placeholder="lastname" id="inputLastname">
-                        <p class="error-message">* invalid lastname</p>
-                    </fieldset>
-                    <fieldset>
-                        <label>DNI</label>
-                        <input type="text" placeholder="dni" id="inputDNI">
-                        <p class="error-message">* invalid DNI</p>
-                    </fieldset>
-                    <fieldset>
-                        <label>Birthday</label>
-                        <input type="text" placeholder="birthday format: dd/mm/yyyy" id="inputBirthday">
-                        <p class="error-message">* invalid date</p>
-                    </fieldset>
-                    <fieldset>
-                        <label>Phone</label>
-                        <input type="text" placeholder="phone" id="inputPhone">
-                        <p class="error-message">* invalid phone</p>
-                    </fieldset>
-                    <fieldset>
-                        <label>Direction</label>
-                        <input type="text" placeholder="direction" id="inputDirection">
-                        <p class="error-message">* invalid direction</p>
-                    </fieldset>
-                    <fieldset>
-                        <label>City</label>
-                        <input type="text" placeholder="city" id="inputCity">
-                        <p class="error-message">* invalid city</p>
-                    </fieldset>
-                    <fieldset>
-                        <label>CP</label>
-                        <input type="text" placeholder="direction" id="inputCP">
-                        <p class="error-message">* invalid cp</p>
-                    </fieldset>
-                    <fieldset>
-                        <label>email</label>
-                        <input type="text" placeholder="email" id="inputEmail">
-                        <p class="error-message">* invalid email</p>
-                    </fieldset>
-                    <fieldset>
-                        <label>Password</label>
-                        <input type="password" placeholder="password" id="inputPassword">
-                        <p class="error-message">* invalid password</p>
-                    </fieldset>
-                    <fieldset>
-                        <label>Password</label>
-                        <input type="password" placeholder="repeatPassword" id="inputRepeatPassword">
-                        <p class="error-message">* invalid password</p>
-                    </fieldset>
-                    <div>
-                        <button class="button-sign-up" type="submit">
-                            CREATE
-                        </button>
-                    </div>
-                </form>
+    <main>
+        <nav class="horizontal-nav">
+            <ul>
+                <li>
+                    <a href="./index.html"> LANDING </a>
+                </li>
+                <li>
+                    <a href="./login.html"> LOGIN </a>
+                </li>
+                <li>
+                    <a href="./employee-signup.html"> SIGN-UP </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="body-login-container">
+            <div class="box-login">
+                <h2> SIGN-UP </h2>
+                <h3> Please enter your Email or your Phone number and your password to log in for your account
+                </h3>
+                <div>
+                    <form action="#">
+                        <div class="fields-column">
+                            <fieldset>
+                                <label>Name</label>
+                                <input type="text" placeholder="name" id="inputName">
+                                <p class="error-message">* invalid name</p>
+                            </fieldset>
+                            <fieldset>
+                                <label>Lastname</label>
+                                <input type="text" placeholder="lastname" id="inputLastname">
+                                <p class="error-message">* invalid lastname</p>
+                            </fieldset>
+                            <fieldset>
+                                <label>DNI</label>
+                                <input type="text" placeholder="dni" id="inputDNI">
+                                <p class="error-message">* invalid DNI</p>
+                            </fieldset>
+                            <fieldset>
+                                <label>Birthday</label>
+                                <input type="date" id="inputBirthday">
+                                <p class="error-message">* invalid date</p>
+                            </fieldset>
+                            <fieldset>
+                                <label>Phone</label>
+                                <input type="text" placeholder="phone" id="inputPhone">
+                                <p class="error-message">* invalid phone</p>
+                            </fieldset>
+                        </div>
+                        <div class="fields-column">
+                            <fieldset>
+                                <label>Direction</label>
+                                <input type="text" placeholder="direction" id="inputDirection">
+                                <p class="error-message">* invalid direction</p>
+                            </fieldset>
+                            <fieldset>
+                                <label>City</label>
+                                <input type="text" placeholder="city" id="inputCity">
+                                <p class="error-message">* invalid city</p>
+                            </fieldset>
+                            <fieldset>
+                                <label>CP</label>
+                                <input type="text" placeholder="direction" id="inputCP">
+                                <p class="error-message">* invalid cp</p>
+                            </fieldset>
+                            <fieldset>
+                                <label>email</label>
+                                <input type="text" placeholder="email" id="inputEmail">
+                                <p class="error-message">* invalid email</p>
+                            </fieldset>
+                            <fieldset>
+                                <label>Password</label>
+                                <input type="password" placeholder="password" id="inputPassword">
+                                <p class="error-message">* invalid password</p>
+                            </fieldset>
+                            <fieldset>
+                                <label>Password</label>
+                                <input type="password" placeholder="repeatPassword" id="inputRepeatPassword">
+                                <p class="error-message">* invalid password</p>
+                            </fieldset>
+                        </div>
+                        <div class="login-button-container">
+                            <button class="button-sign-up" type="submit">
+                                CREATE
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="trackgenix-img">
-        <img src="/assets/TrackGenix.svg" alt="trackgenix">
-    </div>
+        <div id="trackgenix-img">
+            <img src="/assets/TrackGenix.svg" alt="trackgenix">
+        </div>
+    </main>
     <footer class="footer-section">
         <h3>
             <code translate="no">
