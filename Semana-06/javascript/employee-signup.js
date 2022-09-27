@@ -35,7 +35,7 @@ function findNumber(word){
             return (true)
         }
     }
-    return (false);    
+    return (false);
 }
 function findLetter(word){
     letters = word.length;
@@ -46,7 +46,7 @@ function findLetter(word){
             return (true)
         }
     }
-    return (false);    
+    return (false);
 }
 function dateValidate(inputDate){
     if (validate(inputDate.substring(0, 2),'numbers',2,2) == false){

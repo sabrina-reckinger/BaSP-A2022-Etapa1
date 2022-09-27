@@ -13,9 +13,7 @@ main {
     flex-direction: column;
 }
 #trackgenix-img {
-    /* justify-content: center; */
     width: 100%;
-    /* text-align:end; */
     margin-bottom: -5px;
 }
 #trackgenix-img img {
@@ -47,7 +45,7 @@ main {
  .fields-column {
     display: flex;
     flex-wrap: wrap;
-} 
+}
 fieldset {
     flex: 80%;
 }
@@ -55,9 +53,6 @@ input {
     width: 80%;
     margin-top: 10px;
     margin-bottom: 5px;
- /*   margin-left: 2%;*/
- /*   justify-content: center;*/
-  /*  margin-left: 10px;*/
 }
 label {
     display: flex;
@@ -68,11 +63,6 @@ label {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
-/*fieldset, select {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}*/
 .error-message {
     color: red;
     font-size: 17px;
