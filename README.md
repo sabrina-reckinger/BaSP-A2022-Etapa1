@@ -63,6 +63,12 @@ I add a new page call "reset.css" that pulls out the preformat of the bowser and
 
 ### Week 6:
 
->This week i add login page with JS functions
+>This week i add login and sign-up pages with JS functions.
+>The pages are responsive - mobilefirst.
+>To see them you can go here:
+> - Landing --> https://sabrina-reckinger.github.io/BaSP-A2022-Etapa1/Semana-06/views/index.html
+> - Login --> https://sabrina-reckinger.github.io/BaSP-A2022-Etapa1/Semana-06/views/login.html
+> - Sign-up --> https://sabrina-reckinger.github.io/BaSP-A2022-Etapa1/Semana-06/views/employee-signup.html
 
+You can go from page to page using the nav.
 ---------------------------------------
