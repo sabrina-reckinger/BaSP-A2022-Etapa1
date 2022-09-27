@@ -54,3 +54,13 @@ fieldset {
 .hidden {
     display: none;
 }
+.horizontal-nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+}
+.horizontal-nav ul li{
+    width: 33%;
+    text-align: center;
+}

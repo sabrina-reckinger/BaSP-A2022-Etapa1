@@ -44,16 +44,20 @@ main {
     padding-bottom: 15px;
     border: #373867 solid 1px;
 }
-/* .fields-column {
+ .fields-column {
     display: flex;
-} */
-input, select {
+    flex-wrap: wrap;
+} 
+fieldset {
+    flex: 80%;
+}
+input {
     width: 80%;
     margin-top: 10px;
     margin-bottom: 5px;
-    margin-left: 2%;
-    justify-content: center;
-    margin-left: 10px;
+ /*   margin-left: 2%;*/
+ /*   justify-content: center;*/
+  /*  margin-left: 10px;*/
 }
 label {
     display: flex;
@@ -64,11 +68,11 @@ label {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
-fieldset, select {
+/*fieldset, select {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
+}*/
 .error-message {
     color: red;
     font-size: 17px;
@@ -87,4 +91,9 @@ input:focus{
     display: flex;
     flex-direction: row;
     margin: auto;
+    width: 100%;
+}
+.horizontal-nav ul li{
+    width: 33%;
+    text-align: center;
 }

@@ -35,6 +35,13 @@ h2 {
     width: 100%;
 }
 @media (min-width: 768px){
+    main fieldset {
+        flex: 40%;
+    }
+    main fieldset input{
+        width: 90%;
+        margin-left: 10px;
+    }
     header div code {
         font-size: 50px;
     }
@@ -225,8 +232,10 @@ h2 {
         display: flex;
         justify-content: center;
     }
-    main .fields-column {
+    /*main .fields-column {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;*/
     }
     main #trackgenix-img {
         width: 100%;

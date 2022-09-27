@@ -2,8 +2,10 @@ function validate(word, type, minChar, maxChar=0){
     if (word.length < minChar) {
         return (false)
     }
-    if (maxChar > 0 && word.length > maxChar){
-        return (false)
+    if (maxChar > 0) {
+        if (word.length > maxChar){
+            return (false)
+        }
     }
     toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     if (type == "letters"){
@@ -23,6 +25,28 @@ function validate(word, type, minChar, maxChar=0){
         }
     }
     return (true);
+}
+function findNumber(word){
+    letters = word.length;
+    toCheck = "0123456789";
+    for (a = 0; a < letters; a++){
+        charToFind = word[a];
+        if (toCheck.indexOf (charToFind) > -1){
+            return (true)
+        }
+    }
+    return (false);    
+}
+function findLetter(word){
+    letters = word.length;
+    toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    for (a = 0; a < letters; a++){
+        charToFind = word[a];
+        if (toCheck.indexOf (charToFind) > -1){
+            return (true)
+        }
+    }
+    return (false);    
 }
 function dateValidate(inputDate){
     if (validate(inputDate.substring(0, 2),'numbers',2,2) == false){
@@ -107,7 +131,7 @@ window.onload = function () {
     }
     inputBirthday.onblur = function () {
         birthday = inputBirthday.value;
-        birthdayOK = dateValidate (birthday);
+        birthdayOK = dateValidate (birthday, "numbers", 8);
         if (birthdayOK == false) {
             birthdayError.classList.remove ("hidden");
             inputBirthday.classList.add ("redBorder");
@@ -124,7 +148,7 @@ window.onload = function () {
     inputDirection.onblur = function () {
         direction = inputDirection.value;
         space = direction.indexOf(" ");
-        directionOK = validate (direction.substring(0,space), "letters", 3) && validate (direction.substring(space+1), "numbers", 1);
+        directionOK = validate (direction.substring(0,space), "letters", 5) && validate (direction.substring(space+1), "numbers", 1);
         if (directionOK == false) {
             directionError.classList.remove ("hidden");
             inputDirection.classList.add ("redBorder");
@@ -156,7 +180,7 @@ window.onload = function () {
     }
     inputPassword.onblur = function () {
         password = inputPassword.value;
-        passwordOk = validate (password, "lettersAndNumbers", 8);
+        passwordOk = validate (password, "lettersAndNumbers", 8) && findNumber(password) && findLetter(password);
         if (passwordOk == false) {
             passwordError.classList.remove ("hidden");
             inputPassword.classList.add ("redBorder");
@@ -238,7 +262,7 @@ window.onload = function () {
         mail = inputEmail.value;
         mailOk = emailExpression.test(mail);
         password = inputPassword.value;
-        passwordOk = validate (password, "lettersAndNumbers", 8);
+        passwordOk = validate (password, "lettersAndNumbers", 8) && findNumber(password) && findLetter(password);
         repeatPassword = inputRepeatPassword.value;
         repeatPasswordOK = repeatPassword === password;
         if (nameOK == true && lastnameOK== true && DNIOK == true && birthdayOK == true && phoneOK == true && directionOK == true && cityOK == true && CPOK == true && repeatPasswordOK == true && passwordOk == true && mailOk == true){
