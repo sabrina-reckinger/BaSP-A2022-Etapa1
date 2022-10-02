@@ -105,6 +105,17 @@ window.onload = function () {
     emailError.classList.add("hidden");
     passwordError.classList.add("hidden");
     repeatPasswordError.classList.add("hidden");
+    inputName.value = localStorage.getItem('name');
+    inputLastname.value = localStorage.getItem('lastname');
+    inputDNI.value = localStorage.getItem('DNI');
+    inputBirthday.value = localStorage.getItem('birthday');
+    inputPhone.value = localStorage.getItem('phone');
+    inputDirection.value = localStorage.getItem('direction');
+    inputCity.value = localStorage.getItem('city');
+    inputCP.value = localStorage.getItem('CP');
+    inputEmail.value = localStorage.getItem('email');
+    inputPassword.value = localStorage.getItem('password');
+    inputRepeatPassword.value = localStorage.getItem('repeatPassword');
     inputName.onblur = function() {
         var names = inputName.value;
         var nameOK = validate(names, "letters", 4);
@@ -266,6 +277,16 @@ window.onload = function () {
         var repeatPassword = inputRepeatPassword.value;
         var repeatPasswordOK = repeatPassword === password;
         if (nameOK && lastnameOK && DNIOK && birthdayOK && phoneOK && directionOK && cityOK && CPOK && repeatPasswordOK && passwordOk && mailOk){
+            localStorage.setItem('name', name);
+            localStorage.setItem('lastname', lastname);
+            localStorage.setItem('DNI', DNI);
+            localStorage.setItem('phone', phone);
+            localStorage.setItem('direction', direction);
+            localStorage.setItem('city', city);
+            localStorage.setItem('CP', CP);
+            localStorage.setItem('mail', mail);
+            localStorage.setItem('password', password);
+            localStorage.setItem('repeatPassword', repeatPassword);
             alert("Datos correctos." + "\n Los datos ingresados son: " + "\n Nombre completo: " + names + " " + lastname + "\n DNI: " + DNI + "\n Fecha de nacimiento: " + birthday + "\n Telefono: " + phone + "\n Direccion: " + direction + "\n Ciudad: " + city + "\n Codigo Postal: " + CP + "\n eMail: " + mail + "\n Contraseña: " + password)
         } else {
             if (nameOK == false){
