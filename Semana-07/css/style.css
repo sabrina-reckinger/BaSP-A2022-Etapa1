@@ -1,0 +1,239 @@
+header, main, aside, footer {
+    font-family: 'Roboto', sans-serif, 'Lucida Sans';
+    color: #373867;
+    font-size: 20px;
+}
+.horizontal-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(201, 195, 195);
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+}
+.horizontal-nav ul li {
+    display: block;
+}
+link {
+    text-decoration: none;
+}
+aside {
+    display: none;
+}
+p {
+    max-width: 80%;
+    align-items: center;
+}
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #373867;
+    font-size: 30px;
+    font-weight: 700;
+    width: 100%;
+}
+@media (min-width: 768px){
+    main fieldset {
+        flex: 40%;
+    }
+    main fieldset input{
+        width: 90%;
+        margin-left: 10px;
+    }
+    header div code {
+        font-size: 50px;
+    }
+    main .lists {
+		display: flex;
+		flex-direction: row;
+		width: 98%;
+		justify-content: center;
+	}
+	main .lists div {
+		width: 45%;
+	}
+	main .blog-2 {
+        flex-direction: row;
+    }
+	main .column-articles {
+	    flex-direction: row;
+	}
+	main .big-image{
+		width: 58%;
+		align-items: center;
+	}
+	main .little-image{
+		width: 38%;
+	}
+	main .blog-2 img{
+		width:30%;
+		height: 100%;
+		padding-left:0%;
+	}
+    main #arrow-tablet {
+        display: flex;
+    }
+    main #contact {
+        margin-top: 0px;
+    }
+    main .mobile-nav-align-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10 px;
+    }
+    main .menu-postal-icons {
+        display: flex;
+        flex-direction: row;
+        margin-left: 6px;
+    }
+    main h1 {
+        font-style: bold;
+        font-weight: 700;
+        font-size: 60px;
+    }
+    main .work-container {
+        display: flex;
+        flex-direction: row;
+    }
+    main .workwithus-item {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    main .workwithus-item img, .workwithus-item p {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    main .wwus-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main .section-title {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    main .functions-img-and-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+        width: 100%;
+    }
+    main .functions-img-and-list div img {
+        margin-left: 30px;
+    }
+    main .functions-img-and-list div ol {
+        width: 70%;
+        margin-left: 30px;
+        font-weight: 700;
+        font-size: 20px;
+        text-decoration: underline;
+        margin-top: 15px;
+    }
+    main .section-functions {
+        width: 100%;
+    }
+    main .title-section {
+        margin-bottom: 20px;
+    }
+    main .title-section h2 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    main .title-block {
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+    }
+    main .title-section-one {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    main .title-section-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    main .line {
+        height: 40px;
+        align-items: center;
+        width: 80%;
+    }
+    main .title-text ul li {
+        display: flex;
+        flex-direction: column;
+    }
+    main .list-section-lists {
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    main .p-list {
+        display: flex;
+        flex-direction: column;
+    }
+    main input, select, textarea {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 1024px){
+    body {
+        flex-wrap: wrap;
+    }
+    footer .footer-section {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+    }
+    main {
+		width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0%;
+	}
+    main header div {
+        justify-content: center;
+        font-size: 60px;
+    }
+    main .big-image, .little-image, .blog-2 {
+        border-bottom: solid 2px #373867;
+    }
+    main #arrow-tablet, #menu-dots, #contact {
+        display: none;
+    }
+    main .trayectory {
+        border-bottom: 20px rgb(0, 0, 0);
+        margin-bottom: 20px;
+    }
+    main #burger {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    main .horizontal-nav ul {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+    }
+    main .body-login-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    main #trackgenix-img {
+        width: 100%;
+        text-align: center;
+        margin-bottom: -5px;
+    }
+}

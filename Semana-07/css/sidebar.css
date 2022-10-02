@@ -1,0 +1,43 @@
+@media (min-width: 1024px) {
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 20%;
+        background-color: #C4C4C4;
+        border-radius: 10px;
+    }
+    #placeholderline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #aside-placeholder input {
+        background-color: transparent;
+        width: 130px;
+        margin-top: 18px;
+    }
+    aside nav {
+        font-size: 30px;
+        line-height: 60px;
+        margin-top: 30px;
+        padding-left: 10px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: solid 2px #373867;
+    }
+    aside address {
+        font-size: 15px;
+    }
+    address h3 {
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+    }
+    .container-contact {
+        line-height: 40px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+}

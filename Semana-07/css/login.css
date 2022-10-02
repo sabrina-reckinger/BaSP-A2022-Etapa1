@@ -1,0 +1,66 @@
+.body-login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#trackgenix-img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -5px;
+}
+#trackgenix-img img {
+    width: 50%;
+}
+.button-login{
+    background-color: rgb(185, 180, 180);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.box-login {
+    background-color: #D9D9D9;
+    width: 400px;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: #373867 solid 1px;
+}
+input {
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 80px;
+    margin-right: 10px;
+    justify-content: center;
+}
+label {
+    font-size: 15px;
+    color: #373867;
+    text-align: left;
+    padding-left: 80px;
+    margin-top: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+.error-message {
+    color: red;
+    font-size: 17px;
+}
+.hidden {
+    display: none;
+}
+.horizontal-nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+}
+.horizontal-nav ul li{
+    width: 33%;
+    text-align: center;
+}
