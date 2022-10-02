@@ -11,6 +11,11 @@ header, main, aside, footer {
     font-family: "roboto", sans-serif;
     font-size: 18px;
 }
+main #trackgenix-img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: -5px;
+}
 .horizontal-nav ul li {
     display: block;
 }
@@ -230,10 +235,5 @@ h2 {
         width: 100%;
         display: flex;
         justify-content: center;
-    }
-    main #trackgenix-img {
-        width: 100%;
-        text-align: center;
-        margin-bottom: -5px;
     }
 }

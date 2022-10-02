@@ -1,8 +1,8 @@
 function validate(word, type, minChar){
     if (word.length < minChar) {
-        return (false)
+        return false
     }
-    toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    var toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     if (type == "letters"){
         toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     }
@@ -12,53 +12,72 @@ function validate(word, type, minChar){
     if (type == "lettersAndNumbers"){
         toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     }
-    letters = word.length;
+    var letters = word.length;
     for (a = 0; a < letters; a++){
-        charToFind = word[a];
+        var charToFind = word[a];
         if (toCheck.indexOf (charToFind) == -1){
-            return (false)
+            return false
         }
     }
-    return (true);
+    return true;
+}
+function findNumber(word){
+    var letters = word.length;
+    var toCheck = "0123456789";
+    for (a = 0; a < letters; a++){
+        var charToFind = word[a];
+        if (toCheck.indexOf (charToFind) > -1){
+            return true
+        }
+    }
+    return false;
+}
+function findLetter(word){
+    var letters = word.length;
+    var toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    for (a = 0; a < letters; a++){
+        var charToFind = word[a];
+        if (toCheck.indexOf (charToFind) > -1){
+            return true
+        }
+    }
+    return false;
 }
 window.onload = function () {
-    var inputEmail = document.getElementById ("inputEmail");
-    var inputPassword = document.getElementById ("inputPassword");
-    var loginButton = document.getElementsByClassName ("button-login")[0];
+    var inputEmail = document.getElementById("inputEmail");
+    var inputPassword = document.getElementById("inputPassword");
+    var loginButton = document.getElementsByClassName("button-login")[0];
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-    var emailError = document.getElementsByClassName ("error-message")[0];
-    var passwordError = document.getElementsByClassName ("error-message")[1];
-    buscar="0"
-    dondeBuscar="abcdefghijklmnopqrstuvwxyz"
-    console.log(dondeBuscar.indexOf(buscar));
-    emailError.classList.add ("hidden");
-    passwordError.classList.add ("hidden");
+    var emailError = document.getElementsByClassName("error-message")[0];
+    var passwordError = document.getElementsByClassName("error-message")[1];
+    emailError.classList.add("hidden");
+    passwordError.classList.add("hidden");
     inputEmail.onblur = function () {
-        mail = inputEmail.value;
-        mailOk = emailExpression.test(mail);
+        var mail = inputEmail.value;
+        var mailOk = emailExpression.test(mail);
         if (mailOk == false) {
-            emailError.classList.remove ("hidden");
+            emailError.classList.remove("hidden");
         }
     }
     inputEmail.onfocus = function () {
-        emailError.classList.add ("hidden");
+        emailError.classList.add("hidden");
     }
     inputPassword.onblur = function () {
-        password = inputPassword.value;
-        passwordOk = validate (password, "lettersAndNumbers", 8);
+        var password = inputPassword.value;
+        var passwordOk = validate (password, "lettersAndNumbers", 8) && findNumber(password) && findLetter(password);
         if (passwordOk == false) {
-            passwordError.classList.remove ("hidden");
+            passwordError.classList.remove("hidden");
         }
     }
     inputPassword.onfocus = function () {
-        passwordError.classList.add ("hidden");
+        passwordError.classList.add("hidden");
     }
     loginButton.onclick = function(e){
         e.preventDefault();
-        mail = inputEmail.value;
-        mailOk = emailExpression.test(mail);
-        password = inputPassword.value;
-        passwordOk = validate (password, "lettersAndNumbers", 8);
+        var mail = inputEmail.value;
+        var mailOk = emailExpression.test(mail);
+        var password = inputPassword.value;
+        var passwordOk = validate (password, "lettersAndNumbers", 8) && findNumber(password) && findLetter(password);
         if (passwordOk == true && mailOk == true){
             alert("Email: " + mail + ". Password: " + password)
         } else {
