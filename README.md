@@ -12,17 +12,18 @@ Index:
 + Week 3: CSS
 + Week 4: Responsive with CSS
 + Week 5: Correct CSS and do JS exercises
-+ Week 6: Login page
++ Week 6: Login and SignUp pages
++ Week 7: Add fetch and promises tp Login and SignUp pages
 ```
 
 
 ### **Week: 1**
 
 >This week we did the estructure of the proyect with FIGMA.
-We worked in subteams to do the differnts sections. 
+We worked in subteams to do the differnts sections.
 In my case, i worked at the admins section.
 >+ You can see the FIGMA file here: https://www.figma.com/file/nNTIPd7HwRNBoqBnlLO4Vl/UI-kit-RR-(BaSP)-B?node-id=37%3A19
- 
+
 
 ---------------------------------------
 
@@ -34,17 +35,17 @@ In my case, i worked at the admins section.
 ---------------------------------------
 
 
-### Week 3:
+### **Week 3:**
 
 >This week i added CSS to the html code, i use VSC.
 If you like to see all my project at this moment, you will need to download the last week folder call "Semana-02".
-I add a new page call "reset.css" that pulls out the preformat of the bowser and another file "style.css that has got the css code. 
+I add a new page call "reset.css" that pulls out the preformat of the bowser and another file "style.css that has got the css code.
 
 
 ---------------------------------------
 
 
-### Week 4:
+### **Week 4:**
 
 >This week i do that the web page come responsive using only CSS code (property flexbox) for 3 differents monitor formats:
 >- Mobilephone
@@ -55,13 +56,13 @@ I add a new page call "reset.css" that pulls out the preformat of the bowser and
 
 ---------------------------------------
 
-### Week 5:
+### **Week 5:**
 
 >This week i correct my CSS code
 
 ---------------------------------------
 
-### Week 6:
+### **Week 6:**
 
 >This week i add login and sign-up pages with JS functions.
 >The pages are responsive - mobilefirst.
@@ -71,4 +72,18 @@ I add a new page call "reset.css" that pulls out the preformat of the bowser and
 > - Sign-up --> https://sabrina-reckinger.github.io/BaSP-A2022-Etapa1/Semana-06/views/employee-signup.html
 
 You can go from page to page using the nav.
+
+---------------------------------------
+
+### **Week 7:**
+
+> Add FETCH and promises from JS
+> I send the HTTP request like query-params
+>***
+> - The valid email es: rose@radiumrocket.com
+> - The valid password is: BaSP2022
+> - The valid request url for login page is: https://basp-m2022-api-rest-server.herokuapp.com/login
+> - The valid request url for the signup page is: https://basp-m2022-api-rest-server.herokuapp.com/signup
+> ***
+
 ---------------------------------------
