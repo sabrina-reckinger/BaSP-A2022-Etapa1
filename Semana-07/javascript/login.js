@@ -52,8 +52,6 @@ window.onload = function () {
     var passwordError = document.getElementsByClassName("error-message")[1];
     emailError.classList.add("hidden");
     passwordError.classList.add("hidden");
-    inputEmail.value = localStorage.getItem('email');
-    inputPassword.value = localStorage.getItem('password');
     inputEmail.onblur = function () {
         var mail = inputEmail.value;
         var mailOk = emailExpression.test(mail);
@@ -81,15 +79,15 @@ window.onload = function () {
         var password = inputPassword.value;
         var passwordOk = validate (password, "lettersAndNumbers", 8) && findNumber(password) && findLetter(password);
         if (passwordOk == true && mailOk == true){
-            localStorage.setItem('email', mail);
-            localStorage.setItem('password', password);
-            /*alert("Email: " + mail + ". Password: " + password)*/
             var queryParams='email=' + mail + '&password=' + password;
             url='https://basp-m2022-api-rest-server.herokuapp.com/login?' + queryParams;
-            fetch(url)
-                .then(function(data){
-                    console.log(data.json());
-                });
+            var call = fetch(url)
+            call.then(function(response){
+                return response.json()
+            }).then(function(data){
+                if (data.success) alert('La solicitud se realizo correctamente. Y la respuesta fue: ' + data.msg)
+                else alert('Hubo un error. Y el error es: ' + data.msg)
+            });
         } else {
             if (mailOk == false){
                 alert("Invalid email");

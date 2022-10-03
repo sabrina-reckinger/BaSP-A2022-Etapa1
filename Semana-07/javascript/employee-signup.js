@@ -7,15 +7,15 @@ function validate(word, type, minChar, maxChar=0){
             return false
         }
     }
-    var toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    var toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
     if (type == "letters"){
-        toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
     }
     if (type == "numbers"){
         toCheck = "0123456789"
     }
     if (type == "lettersAndNumbers"){
-        toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        toCheck = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
     }
     var letters = word.length;
     for (a = 0; a < letters; a++){
@@ -277,9 +277,11 @@ window.onload = function () {
         var repeatPassword = inputRepeatPassword.value;
         var repeatPasswordOK = repeatPassword === password;
         if (nameOK && lastnameOK && DNIOK && birthdayOK && phoneOK && directionOK && cityOK && CPOK && repeatPasswordOK && passwordOk && mailOk){
-            localStorage.setItem('name', name);
+            localStorage.setItem('name', names);
             localStorage.setItem('lastname', lastname);
             localStorage.setItem('DNI', DNI);
+            localStorage.setItem('birthday', birthday);
+            birthdayLat=birthday.substring(8, 10) + "/" + birthday.substring(5, 7) + "/" + birthday.substring(0,4);
             localStorage.setItem('phone', phone);
             localStorage.setItem('direction', direction);
             localStorage.setItem('city', city);
@@ -287,7 +289,15 @@ window.onload = function () {
             localStorage.setItem('mail', mail);
             localStorage.setItem('password', password);
             localStorage.setItem('repeatPassword', repeatPassword);
-            alert("Datos correctos." + "\n Los datos ingresados son: " + "\n Nombre completo: " + names + " " + lastname + "\n DNI: " + DNI + "\n Fecha de nacimiento: " + birthday + "\n Telefono: " + phone + "\n Direccion: " + direction + "\n Ciudad: " + city + "\n Codigo Postal: " + CP + "\n eMail: " + mail + "\n Contraseña: " + password)
+            var queryParams='name=' + names + '&lastName=' + lastname + '&dni=' + DNI + '&dob=' + birthdayLat + '&phone=' + phone + '&address=' + direction + '&city=' + city + '&zip=' + CP + '&email=' + mail + '&password=' + password;
+            url='https://basp-m2022-api-rest-server.herokuapp.com/signup?' + queryParams;
+            var call = fetch(url)
+            call.then(function(response){
+                return response.json()
+            }).then(function(data){
+                if (data.success) alert('La solicitud se realizo correctamente. Y la respuesta fue: ' + data.msg)
+                else alert('Hubo un error. Y el error fue: ' + data.msg)
+            });
         } else {
             if (nameOK == false){
                 badInputs.push("Nombre = " + names + "\n")
